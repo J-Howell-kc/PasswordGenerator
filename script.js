@@ -2,24 +2,50 @@
 var generateBtn = document.querySelector("#generate");
 
 // prompts for password criteria
+function generatePassword() {
 
-// choose length of password 8-128 characters
-// error message if <8 or >128 length chosen 
+}
+// choose length of password 8-128 characters "Choose password length between 8 and 128 characters."
+// error message if <8 or >128 length chosen -
 //"Password must contain between 8 and 128 characters." 
+var characterLength = ;
 
+console.log(characterLength);
+
+if (characterLength < 8 || characterLength>128) {
+  console.log("Passsword must contain between 8 and 128 Characters!")
+}
+if (characterLength > 128) {
+  console.log("Password must contain between 8 and 128 charcters.")
+}
 // choose which character types to include:
-//        lowercase (abcdefghijklmnopqrstuvwxyz)
-//        uppercase (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
-//        numbers (012356789)
-//        special characters (" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
-
+//        lowercase (abcdefghijklmnopqrstuvwxyz) ok or cancel 
+//        uppercase (ABCDEFGHIJKLMNOPQRSTUVWXYZ) ok or cancel
+//        numbers (012356789) ok or cancel
+//        special characters (" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~") ok or cancel 
+var characterType =
+  console.log(characterType);
 // each prompt should be validated and at least one character type selected , 
-//"Click OK to include lowercase characters."
-//"Click OK to include UPPERCASE characters."
-//"Click OK to include numerical characters."
-//"Click OK to include special characters."
-// ie, error message if none selected "Must select at east one character type."
+//"Click OK to include lowercase characters." if/then var booleanTrue =true var booleanFalse = false
+//"Click OK to include UPPERCASE characters." if/then var booleanTrue =true var booleanFalse = false
+//"Click OK to include numerical characters." if/then var booleanTrue =true var booleanFalse = false
+//"Click OK to include special characters." if/then var booleanTrue =true var booleanFalse = false
+//error message if none selected "Must select at east one character type." if all booleans are false, then restart prompts
+if (characterType = true) {
+  console.log()
+} else {
+  console.log
+}
 
+
+// confirm selections
+
+// use math.random somewhere in here to randomize choices
+
+// for-loop for number of characters chosen:
+for (var i = characterLength; i++) {
+  console.log()
+}
 
 
 // Write password to the #password input
@@ -33,6 +59,9 @@ function writePassword() {
 
 // password generated
 // password displayed
+
+//console.log(passwordText); 
+// displayed as alert?
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
