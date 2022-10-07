@@ -59,29 +59,7 @@ function generatePassword() {
 }
 
 
-// confirm selections
 
-// use math.random somewhere in here to randomize choices
-
-// for-loop for number of characters chosen:
-
-
-// choose which character types to include:
-//        numbers (abcdefghijklmnopqrstuvwxyz) ok or cancel 
-//        uppercase (ABCDEFGHIJKLMNOPQRSTUVWXYZ) ok or cancel
-//        numbers (012356789) ok or cancel
-//        special characters (" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~") ok or cancel 
-
-// each prompt should be validated and at least one character type selected , 
-//"Click OK to include lowercase characters." if/then var booleanTrue =true var booleanFalse = false
-//"Click OK to include UPPERCASE characters." if/then var booleanTrue =true var booleanFalse = false
-//"Click OK to include numerical characters." if/then var booleanTrue =true var booleanFalse = false
-//"Click OK to include special characters." if/then var booleanTrue =true var booleanFalse = false
-//error message if none selected "Must select at east one character type." if all booleans are false, then restart prompts
-
-
-
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
