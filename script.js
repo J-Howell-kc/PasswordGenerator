@@ -12,17 +12,23 @@ function generatePassword() {
   }
   else {
     var possibleChars = []
-    var lowercaseLetters = ["a", "b", "c", "d"];
+    var lowercaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var uppercaseLetters = lowercaseLetters.map(function (el) {
       return el.toUpperCase();
-      
+
+      var numbers = ["0", "1,"2","3","4","5","6","7","8","9"];
+      var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "]", " ^ ", "_",
+      ",", "`", "{", "|", "}", "~"];
+
 
     })
 
-    var  lowercaseConfirm = confirm("Would you like to use lowercase characters?")
+    var lowercaseConfirm = confirm("Would you like to use lowercase characters?");
+    var uppercaseConfirm = confirm("Would you like to use uppercase letters?");
+    var numbersConfirm = confirm("Would you like to use digits?");
+    var specialCharConfirm = confirm("Would you like to use special characters?");
 
-    //need confirm for other choices
-if (lowercaseConfirm
+    if (lowercaseConfirm
 
   }
 
